@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SwaLay Label - Login</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/>
+  <link rel="stylesheet" href="style.css"
+  </head>
+
+  <body>
+    <div class="page-header">
+        <h1 class="title">Account Settings</h1>
+          <ol class="breadcrumb"></ol>
+
+<div class="container-default">
+<div class="">
+<div class="col-md-4 float-md">
+      <div class="panel panel-default">
+        <div class="panel-title">
+          SwaLay India
+        </div>
+
+        <div class="panel-body">
+          <img src="https://dashboard.swalay.in/app/img/user.png" class="img-thumbnail">
+          <ul class="list-group">
+            <li class="list-group-item">Joining Date: <b>01-01-2022</b></li>
+            <li class="list-group-item">Status:  <b> Full Active</b></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+<div class="col-md-8 float-md-r">
+      <div class="panel panel-default">
+        <div class="panel-title">
+          Basic Details
+        </div>
+
+        <div class="panel-body">
+         <form class="form-horizontal" method="post" action="settings.php">
+           <div class="form-group">
+               <label class="col-md-2 control-label form-label">Label Name</label>
+                <div class="col-md-10">
+                <input type="text" class="form-control form-control-line" name="label" value="SL Web Team" disabled="">
+               </div>
+          </div>
+
+              <div class="panel-default">
+                <div class="form-group">
+                         <label class="col-md-2 control-label form-label">Email:</label>
+                          <div class="col-md-6">
+                              <input type="text" class="form-control form-control-line" name="email" value="demo@talantoncore.in">
+                           </div>
+                      </div>
+
+                      <div class="form-group">
+                         <label class="col-md-2 control-label form-label">Owner Name:</label>
+                          <div class="col-md-6">
+                              <input type="text" class="form-control form-control-line" name="name" value="SwaLay India">
+                           </div>
+                      </div>
+                      <div class="form-group">
+                         <label class="col-md-2 control-label form-label">Address:</label>
+                          <div class="col-md-6">
+                              <input type="text" class="form-control form-control-line" name="ads" value="SwaLay India, UP, India">
+                           </div>
+                      </div>
+
+                      <div class="form-group">
+                         <label class="col-md-2 control-label form-label">Phone:</label>
+                          <div class="col-md-6">
+                              <input type="text" class="form-control form-control-line" name="phone" value="9999999999">
+                        </div>
+                    </div>
+
+                          <div class="form-group">
+                         <label class="col-md-2 control-label form-label"></label>
+                          <div class="col-md-6">
+                              <input type="submit" class="btn btn-option3" name="submit1" value="Update">
+                           </div>
+                      </div>
+      </div>
+    </form>
+    </div>
+    </div>
+  <div class="panel panel-default">
+
+        <div class="panel-title">
+          Bank Account Details
+        </div>
+
+        <div class="panel-body">
+         <form class="form-horizontal" id="account" action="?" name="account" method="post" enctype="multipart/form-data">
+           <div class="form-group">
+                         <label class="col-md-2 control-label form-label">A/c No:</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control form-control-line" name="account" value="32434" disabled="">
+                           </div>
+                      </div>
+           <div class="form-group">
+                         <label class="col-md-2 control-label form-label">Bank Branch:</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control form-control-line" name="branch" value="State Bank Of India">
+                           </div>
+                      </div>
+                      <div class="form-group">
+                         <label class="col-md-2 control-label form-label">IFSC CODE:</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control form-control-line" name="ifsc" value="SBIN0000">
+                           </div>
+                      </div>
+                      <div class="form-group">
+                         <label class="col-md-2 control-label form-label">PAN NO:</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control form-control-line" name="pan" value="1233456" disabled="">
+                           </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="form-group">
+                         <label class="col-md-2 control-label form-label"></label>
+                          <div class="col-md-10">
+                              <input type="submit" class="btn btn-option3" name="submit2" value="Update">
+                           </div>
+                      </div>
+                  </div>
+                </form>
+    </div>
+  </div>
+
+      <div class="panel panel-default">
+        <div class="panel-title">
+          Change Password
+        </div>
+
+        <div class="panel-body">
+         <form class="form-horizontal" id="account" action="?" name="account" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+          <label class="col-md-3 control-label form-label">Current Password:</label>
+          <div class="col-md-6">
+          <input type="password" class="form-control form-control-line" name="old-password" required="">
+              </div>
+        </div>
+
+           <div class="form-group">
+                         <label class="col-md-3 control-label form-label">New Password:</label>
+                          <div class="col-md-6">
+                              <input type="password" class="form-control form-control-line" name="new-password" required="">
+                           </div>
+                      </div>
+                      <div class="form-group">
+                         <label class="col-md-3 control-label form-label">Confirm Password:</label>
+                          <div class="col-md-6">
+                              <input type="password" class="form-control form-control-line" name="confirm-password" required="">
+                           </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="form-group">
+                         <label class="col-md-3 control-label form-label"></label>
+                          <div class="col-md-9">
+                              <input type="submit" class="btn btn-option3" name="submit3" value="Change Password">
+                           </div>
+                      </div>
+
+      </div>
+    </form>
+    </div>
+
+<div class="clearfix"></div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+            <div class="modal fade shadow-none" id="newRelease" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                   <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Add New Release</h4>
+                  </div>
+                  <form id="addNewRelease" enctype="multipart/form-data">
+                  <div class="modal-body">
+
+                  <div class="form-group col-md-12">
+                  <label class="form-label">Release Title</label>
+                         <input type="text" class="form-control input-sm" name="add-title" placeholder="Title of Album or Release" required="">
+                  </div>
+                          <div class="form-group col-md-6">
+                            <label for="input1" class="form-label">Main Artist</label>
+                            <input type="text" name="artist" class="form-control input-sm" placeholder="Name of Artist" required="">
+                          </div>
+                         <div class="form-group col-md-6">
+                            <label for="input1" class="form-label">Genre</label>
+                          <select name="genre" class="form-control input-sm">
+                            <option value="Pop">Pop</option> <option value=" Film"> Film</option> <option value=" Folk"> Folk</option> <option value=" Devotional"> Devotional</option> <option value=" Traditional"> Traditional</option> <option value=" Instrumental"> Instrumental</option> <option value=" Western Classical"> Western Classical</option> <option value=" Carnatic Classical"> Carnatic Classical</option> <option value=" Hindustani Classical"> Hindustani Classical</option> <option value=" Spiritual"> Spiritual</option> <option value=" English Pop"> English Pop</option> <option value=" Gazal"> Gazal</option> <option value=" Regional Pop"> Regional Pop</option> <option value=" Lounge"> Lounge</option> <option value=" Fusion"> Fusion</option> <option value=" Electronic"> Electronic</option> <option value=" Hip Hop"> Hip Hop</option> <option value=" Rock"> Rock</option>                           </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="input1" class="form-label">Releae Date</label>
+                            <input type="date" id="date-picker" name="date" class="form-control input-sm" required="">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="input1" class="form-label">Record label</label>
+                             <select name="label" class="form-control input-sm">
+                                 <option value="SL Web Team">SL Web Team</option>                              </select>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="input1" class="form-label">Language</label>
+                             <select name="language" class="form-control input-sm">
+                              <option value="Hindi">Hindi</option> <option value="Punjabi">Punjabi</option> <option value="English">English</option> <option value="Bengali">Bengali</option> <option value="Gujarati">Gujarati</option> <option value="Assamese">Assamese</option> <option value="Malayalam">Malayalam</option> <option value="Rajasthini">Rajasthini</option> <option value="Konkani">Konkani</option> <option value="Marathi">Marathi</option> <option value="Gadhwali">Gadhwali</option> <option value="Kannada">Kannada</option> <option value="Bhojpuri">Bhojpuri</option> <option value="Oriya">Oriya</option> <option value="Telugu">Telugu</option> <option value="Nagpuri">Nagpuri</option> <option value="Haryanvi">Haryanvi</option> <option value="Tamil">Tamil</option> <option value="Maithli">Maithli</option> <option value="Chhastisgarhi">Chhastisgarhi</option> <option value="Santhali">Santhali</option> <option value="Kasmiri">Kasmiri</option> <option value="Nepali">Nepali</option> <option value="Japanese">Japanese</option> <option value="Arabic">Arabic</option> <option value="African">African</option> <option value="Urdu">Urdu</option> <option value="Hadoti-Rajasthini">Hadoti-Rajasthini</option> <option value="Dogri">Dogri</option> <option value="Gharwali">Gharwali</option> <option value="Sanskrit">Sanskrit</option>                                 </select>
+                          </div>
+                         <div class="form-group col-md-6">
+                            <label for="input1" class="form-label">Artwork</label>
+                          <input type="file" name="cover" class="form-control input-sm" accept="image/x-png,image/gif,image/jpeg,image/jpg" required="">
+                         </div>
+                     <div class="form-group col-md-6">
+                            <label for="input1" class="form-label">P Line</label>
+                           <select name="pline" class="form-control input-sm"><option value="2021 SL Web Team">℗ 2022 SL Web Team</option>                              </select>
+                          </div>
+                         <div class="form-group col-md-6">
+                            <label for="input1" class="form-label">C Line</label>
+                          <select name="cline" class="form-control input-sm">
+                                      <option value="2021 SL Web Team">© 2022 SL Web Team</option>
+                             </select>
+                      </div>
+                    </div>
+                      <div class="clearfix"></div>
+                  <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal">Cancel</button>
+                  <input type="submit" name="submit" class="btn btn-default" value="Submit"></div>
+              </form>
+              </div>
+            </div>
+</div>
+
+<div class="modal fade" id="status" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">File Uploading</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4 id="sts" class="small font-weight-bold"> <span class="float-right">20%</span></h4>
+        <div class="progress mb-4">
+        <div id="prog" class="progress-bar bg-danger" role="progressbar"></div>
+        </div>
+        <h4 id="sts" class="small font-weight-bold"> <span class="float-right">Don't Close or Reload window while uploading</span></h4>
+                  </div>
+                  <div class="modal-footer"><button data-dismiss="modal" class="btn btn-primary">Cancel</button></div>
+                </div>
+              </div>
+            </div><div id="alerttop" class="kode-alert kode-alert-icon kode-alert-click alert6 kode-alert-top">
+          </div>
+          <div class="clearfix"></div>
+  <div class="row footer">
+     <div class="col-md-6 text-left">
+        Copyright © 2022 By Swalay                                               Powered By TalantonCore
+     </div>
+  </div>
+</div>
+<script src="/app/js/jquery.min.js"></script>
+<script src="/app/js/bootstrap/bootstrap.min.js"></script>
+<script src="/app/js/plugins.js"></script>
+<script src="/app/js/sweet-alert/sweet-alert.min.js"></script>
+<script>
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
+<script>
+$(document).ready(function(){
+        $("#addNewRelease").submit(function(event){
+            event.preventDefault();
+        var deta = new FormData(this);
+            $.ajax({
+                 xhr: function() {
+        var xhr = new window.XMLHttpRequest();
+        xhr.upload.addEventListener("progress", function(evt) {
+             $("#status").modal("show");
+            if (evt.lengthComputable) {
+                var percentComplete = parseInt((evt.loaded / evt.total) * 100);
+                $("#sts").html("Uploading "+percentComplete+"%");
+                $("#prog").css("width",percentComplete+"%");
+                if (percentComplete === 100) {
+              $("#sts").html("File Upload Complete (Processing Data....)");
+        }
+            }
+       }, false);
+       return xhr;
+    },
+                    url:'/app/fun/add-release-check.php',
+                    type: 'POST',
+                    data:deta,
+                    processData: false,
+                    contentType: false,
+                    success:function(result){
+                        var data = $.parseJSON(result);
+                       if(data['status'] == 1){ location.href="/app/album-add.php?id="+data['id'];}
+                        $("#status").modal("hide");
+                    }
+
+            });
+        });
+
+
+        $("#addNewTrack").submit(function(event){
+            event.preventDefault();
+        var dbta = new FormData(this);
+            $.ajax({
+                 xhr: function() {
+        var xhr = new window.XMLHttpRequest();
+        xhr.upload.addEventListener("progress", function(evt) {
+             $("#status").modal("show");
+            if (evt.lengthComputable) {
+                var percentComplete = parseInt((evt.loaded / evt.total) * 100);
+                $("#sts").html("Uploading "+percentComplete+"%");
+                $("#prog").css("width",percentComplete+"%");
+                if (percentComplete === 100) { $("#status").modal("hide");
+              window.swal({
+              title: "Processing...",
+              text: "Please wait",
+              showConfirmButton: false,
+              allowOutsideClick: false
+            });
+
+        }
+            }
+       }, false);
+       return xhr;
+    },
+                    url:'/app/fun/add-track-check.php',
+                    type: 'POST',
+                    data:dbta,
+                    processData: false,
+                    contentType: false,
+                    success:function(result){
+                         var data = $.parseJSON(result);
+                       if(data['status'] == 1){
+                           $("#tracks").html("");
+                           lad(data['cid']);
+                           swal("Success!", "Your track "+data['title']+ " added Successfully", "success");
+                           $("#myModal").modal("hide");
+                           $("#addNewTrack")[0].reset();
+                            }
+                           if(data['status'] == 3){ swal.close(); $("#alerttop").html("Invalid file or Google Drive Link ");$("#alerttop").fadeToggle(350); }
+                        $("#status").modal("hide");
+
+                    }
+
+            });
+        });
+    });
+   </script>
+</div>
+</div>
+</body>
+</html>
